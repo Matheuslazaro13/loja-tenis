@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 900px;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #370f53;
+    margin-bottom: 42px;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 19px;
+}
+
+.cabecalho a{
+    text-decoration: none;
+    margin-right: 12px;
+    color: #fff;
+}
+
+.cabecalho a:hover{
+    cursor: pointer;
+    transition-delay: 500ms;
+    border-bottom: 1px solid #fff;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+article h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 45px;
+    border-bottom: 2px solid #370f53;
+    box-shadow: 1px ;
+    color: #370f53;
+}
+
+.conteudo img{
+    margin-right: 16px;
+    width: 350px;
+    height: 250px;
+}
+.conteudo p{
+  font-size: 1.5em;  
+}
+
+.produtos h2{
+    margin-bottom: 2px;
+    border-bottom: 1px solid #370f53;
+    color: #370f53;
+    padding: 8px;
+}
+
+.itens{
+    margin-top: 8px;
+    display: flex;
+
+}
+
+.itens img{
+    width: 250px;
+    margin-right: 5px;
+}
+
+.tenis{
+    align-items: center;
+}
+
+.tenis > button{
+    width: 95%;
+    margin-top: 16px;
+    background-color: #370f53;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 667px) {
+    .container{
+        display: block;
+        overflow-y: hidden;
+    }
+    
+    body{
+        text-align: center;
+        max-width: 667px;
+    }
+
+    .cabecalho{
+        padding: 32px;
+        
+    }
+
+     h1{
+        font-size: 42px;
+    }
+
+    .cabecalho a{
+        display: block;
+        margin-bottom: 14px;
+        font-size: 18px;
+    }
+
+    .conteudo img{
+        width: 98%;
+    }
+
+    .itens{
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .itens img{
+        width: 98%;
+        margin-bottom: 8px;
+    }
+
+    .tenis{
+        text-align: center;
+    }
+
+    .tenis > button{
+        margin-bottom: 32px;
+        padding: 16px;
+    }
+}
+
+
+@media screen and (min-width: 668px) and (max-width: 1023px) {
+    body{
+        max-width: 1023px;
+        text-align: center;
+        font-size: 26px;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .cabecalho{
+        padding: 32px;
+        font-size: 20px;
+    }
+    
+    article h2, h2{
+        text-align: left;
+    }
+
+    .conteudo{
+        display: block;
+    }
+    
+    
+    .conteudo img{
+        width: 60%;
+        height: 40%;
+    }
+
+    .itens{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        margin-bottom: 16px;
+    }
+
+    .itens img{
+        width: 80%;
+        margin-top: 16px;
+    }
+
+    .itens button{
+        margin-bottom: 16px;
+        padding: 22px;
+        font-size: 16px;
+    }
+}
